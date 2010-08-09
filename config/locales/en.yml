@@ -1,0 +1,4 @@
+en:
+  interested_person:
+    create:
+      success: 'Created InterestedPerson successfully'
