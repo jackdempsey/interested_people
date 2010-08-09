@@ -18,7 +18,19 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     "LICENSE",
-     "README.textile"
+     "README.textile",
+     "Rakefile",
+     "VERSION",
+     "app/controllers/interested_people_controller.rb",
+     "app/models/interested_person.rb",
+     "app/views/interested_people/new.html.erb",
+     "config/locales/en.yml",
+     "config/routes.rb",
+     "interested_people.gemspec",
+     "lib/interested_people.rb",
+     "lib/interested_people/engine.rb",
+     "test/helper.rb",
+     "test/test_interested_people.rb"
   ]
   s.homepage = %q{http://github.com/jackdempsey/interested_people}
   s.rdoc_options = ["--charset=UTF-8"]
