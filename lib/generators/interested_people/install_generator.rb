@@ -1,6 +1,7 @@
 module InterestedPeople
   module Generators
     class InstallGenerator < Rails::Generators::Base
+
       source_root File.expand_path("../templates", __FILE__)
 
       desc "Install interested people files into your app"
@@ -9,9 +10,9 @@ module InterestedPeople
         copy_file "en.yml", "config/locales/interested_people.en.yml"
       end
 
-      #def copy_migration
-      #  migration_template "migration.rb", "db/migrate/create_interested_people"
-      #end
+      def print_migration
+        readme "migration.rb"
+      end
 
     end
   end
