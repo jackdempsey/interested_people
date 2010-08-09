@@ -1,0 +1,31 @@
+h2. Interested People
+
+h3. Reason for Existing
+
+I've written various 30 minute systems for easily collecting a list of people's email addresses, usually for the purpose of emailing them later. Except for the css
+and overall design, they are always collecting the same thing: a name, email address, and maybe a reason for interest. So, this engine exists to easily be dropped in and save you a 
+little dull coding.
+
+h3. Version Requirements and Info
+
+I'd like to start a trend of people including some informationa about the platform they used while building their code. For me this includes:
+
+~ > ruby -v
+ruby 1.8.7 (2010-04-19 patchlevel 253) [i686-darwin10.3.0], MBARI 0x6770, Ruby Enterprise Edition 2010.02
+
+~ > gem -v 
+1.3.7
+
+~ > bundle -v
+Bundler version 1.0.0.rc.1
+
+~ > rvm -v
+
+rvm 0.1.38 by Wayne E. Seguin (wayneeseguin@gmail.com) [http://rvm.beginrescueend.com/]
+
+~ > rails -v
+Rails 3.0.0.rc
+
+h3. Usage Requirements
+
+More to come
