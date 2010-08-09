@@ -1,4 +1,5 @@
 en:
   interested_person:
     create:
+      introduction: "Interested in our site? Sign up now!"
       success: 'Created InterestedPerson successfully'

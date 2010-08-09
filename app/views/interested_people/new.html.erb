@@ -1,0 +1,11 @@
+<%= t 'interested_person.create.introduction' %>
+
+<%= form_for InterestedPerson.new do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <%= f.submit %>
+<% end %>
