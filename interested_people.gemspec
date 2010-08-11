@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jack Dempsey"]
   s.date = %q{2010-08-11}
-  s.description = %q{TODO: engine that handles mailing list type forms. Aw yea.}
+  s.description = %q{engine that handles mailing list type forms. Aw yea.}
   s.email = %q{jack.dempsey@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",

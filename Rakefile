@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "interested_people"
     gem.summary = %Q{engine that handles mailing list type forms}
-    gem.description = %Q{TODO: engine that handles mailing list type forms. Aw yea.}
+    gem.description = %Q{engine that handles mailing list type forms. Aw yea.}
     gem.email = "jack.dempsey@gmail.com"
     gem.homepage = "http://github.com/jackdempsey/interested_people"
     gem.authors = ["Jack Dempsey"]
