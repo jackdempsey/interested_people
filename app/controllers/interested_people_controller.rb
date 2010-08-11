@@ -10,7 +10,7 @@ class InterestedPeopleController < ApplicationController
     @interested_person = InterestedPerson.new(params[:interested_person])
     if @interested_person.save
       flash[:notice] = t 'interested_person.create.success'
-      redirect_to '/'
+      redirect_to InterestedPeople.after_submit_url
     else
       render :new
     end
