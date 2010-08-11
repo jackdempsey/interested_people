@@ -10,6 +10,10 @@ module InterestedPeople
         copy_file "en.yml", "config/locales/interested_people.en.yml"
       end
 
+      def copy_initializer
+        template "initializer.rb", "config/initializers/interested_people.rb"
+      end
+
       def print_migration
         readme "migration.rb"
       end
