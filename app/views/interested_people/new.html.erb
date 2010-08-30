@@ -1,6 +1,6 @@
 <%= t 'interested_person.create.introduction' %>
 
-<%= form_for (@interested_person ||= InterestedPerson.new) do |f| %>
+<%= form_for(@interested_person ||= InterestedPerson.new) do |f| %>
   <% if @interested_person.errors.present? %>
     <div class='formErrors'>
       <%= @interested_person.errors.full_messages %>
