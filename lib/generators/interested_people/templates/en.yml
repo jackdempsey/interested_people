@@ -3,3 +3,4 @@ en:
     create:
       introduction: "Interested in our site? Sign up now!"
       success: 'Created InterestedPerson successfully'
+      failure: 'There was a problem adding you to our list. Are you already signed up?'
