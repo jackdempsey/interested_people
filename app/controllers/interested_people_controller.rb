@@ -12,7 +12,8 @@ class InterestedPeopleController < ApplicationController
       flash[:notice] = t 'interested_person.create.success'
       redirect_to InterestedPeople.after_submit_url
     else
-      render :new
+      flash[:alert] = t 'interested_person.create.failure'
+      redirect_to root_url
     end
   end
 end
