@@ -1,8 +1,7 @@
 require 'active_support/dependencies'
+require "interested_people/engine"
 
 module InterestedPeople
-  require 'interested_people/engine' if defined?(Rails) && Rails::VERSION::MAJOR == 3
-
   # Url to redirect to after submission
   mattr_accessor :after_submit_url
   @@after_submit_url = '/'
