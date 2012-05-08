@@ -1,4 +1,4 @@
-class InterestedPeopleController < ApplicationController
+class InterestedPeopleController < ::ApplicationController
 
   unloadable
 
