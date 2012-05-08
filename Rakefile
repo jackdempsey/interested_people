@@ -1,52 +1,40 @@
-require 'rubygems'
-require 'rake'
-
+#!/usr/bin/env rake
 begin
-  require 'jeweler'
-  Jeweler::Tasks.new do |gem|
-    gem.name = "interested_people"
-    gem.summary = %Q{engine that handles mailing list type forms}
-    gem.description = %Q{engine that handles mailing list type forms. Aw yea.}
-    gem.email = "jack.dempsey@gmail.com"
-    gem.homepage = "http://github.com/jackdempsey/interested_people"
-    gem.authors = ["Jack Dempsey"]
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
-  end
-  Jeweler::GemcutterTasks.new
+  require 'bundler/setup'
 rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
+  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
 end
-
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
-
 begin
-  require 'rcov/rcovtask'
-  Rcov::RcovTask.new do |test|
-    test.libs << 'test'
-    test.pattern = 'test/**/test_*.rb'
-    test.verbose = true
-  end
+  require 'rdoc/task'
 rescue LoadError
-  task :rcov do
-    abort "RCov is not available. In order to run rcov, you must: sudo gem install spicycode-rcov"
-  end
+  require 'rdoc/rdoc'
+  require 'rake/rdoctask'
+  RDoc::Task = Rake::RDocTask
 end
 
-task :test => :check_dependencies
-
-task :default => :test
-
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
+RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "interested_people #{version}"
-  rdoc.rdoc_files.include('README*')
+  rdoc.title    = 'InterestedPeople'
+  rdoc.options << '--line-numbers'
+  rdoc.rdoc_files.include('README.rdoc')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+APP_RAKEFILE = File.expand_path("../test/dummy/Rakefile", __FILE__)
+load 'rails/tasks/engine.rake'
+
+
+
+Bundler::GemHelper.install_tasks
+
+require 'rake/testtask'
+
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'lib'
+  t.libs << 'test'
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = false
+end
+
+
+task :default => :test
