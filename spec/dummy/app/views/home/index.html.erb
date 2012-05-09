@@ -1,1 +1,6 @@
 Welcome
+
+<%= form_for InterestedPerson.new do |f| %>
+  <%= f.text_field :email %>
+  <%= f.submit %>
+<% end %>
