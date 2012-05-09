@@ -2,10 +2,6 @@ class InterestedPeopleController < ::ApplicationController
 
   unloadable
 
-  def new
-    @interested_person = InterestedPerson.new
-  end
-
   def create
     @interested_person = InterestedPerson.new(params[:interested_person])
     if @interested_person.save
