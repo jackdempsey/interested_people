@@ -14,10 +14,9 @@ module InterestedPeople
         template "initializer.rb", "config/initializers/interested_people.rb"
       end
 
-      def print_migration
-        readme "migration.rb"
+      def show_readme
+        readme "README" #TODO do we need this -> if behavior == :invoke
       end
-
     end
   end
 end

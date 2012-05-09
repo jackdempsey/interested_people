@@ -1,0 +1,7 @@
+===============================================================================
+
+Congrats, InterestedPeople is now installed. A couple notes:
+
+  1. Make sure you've configured the after_submit_url correctly (defaults to /).
+     You can change this in config/initializers/interested_people.rb.
+
