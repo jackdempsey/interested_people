@@ -1,3 +1,9 @@
+<div id='flash'>
+  <% if notice.present? %>
+    <%= notice %>
+  <% end %>
+</div>
+
 Welcome
 
 <%= form_for InterestedPerson.new do |f| %>

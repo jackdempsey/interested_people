@@ -9,11 +9,12 @@ feature "User signs up for mailing list", %q{
   background do
   end
 
-  scenario "Load main page with form" do
+  scenario "Submit your email to the engine" do
     visit '/'
-    page.should have_content('Welcome')
+    page.should have_content 'Welcome'
 
     fill_in 'interested_person_email', with: 'jack.dempsey@me.com'
     click_on 'Create Interested person'
+    page.should have_content 'Thanks'
   end
 end

@@ -2,5 +2,5 @@ en:
   interested_person:
     create:
       introduction: "Interested in our site? Sign up now!"
-      success: 'Created InterestedPerson successfully'
+      success: "Thanks, we'll be in touch soon!"
       failure: 'There was a problem adding you to our list. Are you already signed up?'

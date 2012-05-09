@@ -7,7 +7,7 @@ module InterestedPeople
       desc "Install interested people files into your app"
 
       def copy_locale
-        copy_file "en.yml", "config/locales/interested_people.en.yml"
+        copy_file "../../../../config/locales/en.yml", "config/locales/interested_people.en.yml"
       end
 
       def copy_initializer
