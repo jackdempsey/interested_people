@@ -5,3 +5,7 @@ Congrats, InterestedPeople is now installed. A couple notes:
   1. Make sure you've configured the after_submit_url correctly (defaults to /).
      You can change this in config/initializers/interested_people.rb.
 
+  2. Copy the migration from the engine into your application and run:
+  
+      $ rake interested_people_engine:install:migrations
+      $ rake db:migrate
