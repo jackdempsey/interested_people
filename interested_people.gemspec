@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = InterestedPeople::VERSION
   s.authors     = ["Jack Dempsey"]
   s.email       = ["jack.dempsey@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/jackdempsey/interested_people"
   s.summary     = "Easily allow people to signup on list for future notification"
   s.description = "Simple Rails engine that let's you quickly standup a 'Signup for Invite' landing page and contact them in future."
 
