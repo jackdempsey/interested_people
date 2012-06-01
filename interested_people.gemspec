@@ -12,6 +12,11 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/jackdempsey/interested_people"
   s.summary     = "Easily allow people to signup on list for future notification"
   s.description = "Simple Rails engine that let's you quickly standup a 'Signup for Invite' landing page and contact them in future."
+  s.post_install_message = %Q{**************************************************
+  Thanks for installing Interested People! Be sure to run the generator to finish this process:
+  rails g interested_people:install
+**************************************************
+}
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
